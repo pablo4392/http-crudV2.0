@@ -1,0 +1,19 @@
+.create-task {
+    width: 100vh;
+    padding: 15px;
+    border: solid 5px #f4eee8;
+    border-radius: 25px;
+    background-color: #325288;
+    color: black;
+}
+
+.principal-title {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    color: #eeeeee;
+}
+
+.label-input{
+    font-size: 18px;
+}
