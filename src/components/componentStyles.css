@@ -1,0 +1,32 @@
+/* CRETE TASK */
+.create-task {
+    width: 100vh;
+    background-color: #185adb;
+}
+
+/* TASKS */
+.task-card {
+    width: 400px;
+    padding: 10px;
+    background-color: #233e8b;
+    color: #ffffc7;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.student {
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.task {
+    margin: 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
