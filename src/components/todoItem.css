@@ -3,6 +3,7 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #233e8b;
     color: #ffffc7;
     border-radius: 25px;
@@ -17,7 +18,7 @@
 .task {
     margin: 8px 0;
     font-size: 18px;
-    text-align: justify;
+    
 }
 
 .buttons-panel {

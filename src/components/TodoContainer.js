@@ -4,8 +4,6 @@ import Services from './services.js'
 import TodoItem from './TodoItem.js';
 import CreateTodo from './CreateTodo.js';
 
-
-
 const TodoContainer = () => {
     const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState(null); 
@@ -15,6 +13,7 @@ const TodoContainer = () => {
     useEffect(() => {
         Services.read()
             .then(response => {
+                console.log(response.data)
                 setTasks(response.data.todos)
         });
     }, []);
@@ -53,6 +52,11 @@ const TodoContainer = () => {
         setIdToDelete(id);
     };
 
+    const updateFunction = id => {
+        alert(id)
+    }
+
+
     return (
         <div className='container'>
             <CreateTodo handleCreate={createTaskFunction} />
@@ -60,8 +64,11 @@ const TodoContainer = () => {
                 <TodoItem
                     key={value.id}
                     id={value.id}
-                    student={value.student}
+                    student={value.student.toUpperCase()}
                     task={value.task}
+                    studentValue={value.student}
+                    taskValue={value.task}
+                    handleUpdate={updateFunction}
                     handleDelete={deleteFunction}
                 />
             ))}

@@ -27,7 +27,14 @@ class Services {
         })
         return removePromise;
     }
-
+    
+    static update(id) {
+        const updatePromise = axios({
+            method: 'PUT',
+            url:`${baseUrl}/${id}`
+        })
+        return updatePromise;
+    }
 }
 
 export default Services;
