@@ -38,7 +38,7 @@ const TodoItem = ({student, task, studentValue, taskValue, handleUpdate, handleD
                         <input className="task-input mb-1" defaultValue={taskValue} type="text" />
                     </div>
                     <div className="update-panel mt-3">
-                        <button className="btn btn-outline-warning" onClick={() => handleUpdate()} >Update</button>
+                        <button className="btn btn-outline-warning" onClick={() => handleUpdate(id)} >Update</button>
                         <button className="btn btn-outline-dark" onClick={() => setUpdating(true)} >Cancel</button>                        
                     </div>
                 </> )

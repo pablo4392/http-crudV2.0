@@ -13,7 +13,6 @@ const TodoContainer = () => {
     useEffect(() => {
         Services.read()
             .then(response => {
-                console.log(response.data)
                 setTasks(response.data.todos)
         });
     }, []);
